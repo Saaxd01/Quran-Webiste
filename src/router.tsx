@@ -1,5 +1,5 @@
 // Minimal getRouter export expected by start-client-core.
-// This returns a simple object with a routes property that the start plugin can read.
+// Return a router-like object with routes that include children.
 
 export function getRouter() {
   return {
@@ -7,6 +7,7 @@ export function getRouter() {
       index: {
         id: "index",
         path: "/",
+        children: {},
       },
     },
   };
